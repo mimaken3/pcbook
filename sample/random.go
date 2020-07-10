@@ -13,7 +13,7 @@ func randomKeyboardLayout() pb.Keyboard_Layout {
 		return pb.Keyboard_QWERTY
 	case 2:
 		return pb.Keyboard_QWERTZ
-	case 3:
+	default:
 		return pb.Keyboard_AZERTY
 	}
 }

@@ -27,11 +27,12 @@ func NewCPU() *pb.CPU {
 	maxGhz := randomFloat64(minGhz, 5.0)
 
 	cpu := &pb.CPU{
-		Brand:       brand,
-		Name:        name,
-		NumberCores: uint32(numberCores),
-		MinGhz:      minGhz,
-		MaxGhz:      maxGhz,
+		Brand:         brand,
+		Name:          name,
+		NumberCores:   uint32(numberCores),
+		NumberThreads: uint32(numberThreads),
+		MinGhz:        minGhz,
+		MaxGhz:        maxGhz,
 	}
 	return cpu
 }
