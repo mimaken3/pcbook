@@ -1,65 +1,65 @@
 {
-  "id": "682698f2-da20-4eeb-bd8b-7c4311c422bc",
+  "id": "94347619-dd09-4433-8ffa-c770a4b1e073",
   "brand": "Lenovo",
-  "name": "Thinkpad X1",
+  "name": "Thinkpad P1",
   "cpu": {
-    "brand": "AMD",
-    "name": "Ryzen 3 PRO 3200GE",
-    "number_cores": 8,
-    "number_threads": 11,
-    "min_ghz": 2.0984555288262143,
-    "max_ghz": 2.552603107028386
+    "brand": "Intel",
+    "name": "Xeon E-2286M",
+    "number_cores": 4,
+    "number_threads": 6,
+    "min_ghz": 2.929296976579169,
+    "max_ghz": 3.566522431526998
   },
   "ram": {
-    "value": "63",
-    "unit": "GIGABYTE"
+    "value": "8",
+    "unit": 5
   },
   "gpus": [
     {
-      "brand": "NVIDIA",
-      "name": "GTX 1660-Ti",
-      "min_ghz": 1.4068199804950483,
-      "max_ghz": 1.533917028612668,
+      "brand": "AMD",
+      "name": "RX Vega-56",
+      "min_ghz": 1.2620827215419008,
+      "max_ghz": 1.346509310583945,
       "memory": {
-        "value": "6",
-        "unit": "GIGABYTE"
+        "value": "5",
+        "unit": 5
       }
     }
   ],
   "storages": [
     {
-      "driver": "SSD",
+      "driver": 2,
       "memory": {
-        "value": "618",
-        "unit": "GIGABYTE"
+        "value": "435",
+        "unit": 5
       }
     },
     {
-      "driver": "HDD",
+      "driver": 1,
       "memory": {
-        "value": "3",
-        "unit": "TERABYTE"
+        "value": "2",
+        "unit": 6
       }
     }
   ],
   "screen": {
-    "size_inch": 14.132136,
+    "size_inch": 14.753698,
     "resolution": {
-      "width": 2055,
-      "height": 1156
+      "width": 6705,
+      "height": 3772
     },
-    "panel": "IPS",
+    "panel": 2,
     "multitouch": false
   },
   "keyboard": {
-    "layout": "QWERTZ",
+    "layout": 1,
     "backlit": false
   },
-  "weight_kg": 2.1413465521420454,
-  "price_usd": 2793.7371561718296,
-  "release_year": 2017,
+  "weight_kg": 2.800267443069256,
+  "price_usd": 2827.222586918084,
+  "release_year": 2019,
   "updated_at": {
-    "seconds": "1594372904",
-    "nanos": 291573000
+    "seconds": "1594375289",
+    "nanos": 859453000
   }
 }

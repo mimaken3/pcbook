@@ -9,10 +9,10 @@ import (
 func ProtobufToJSON(message proto.Message) (string, error) {
 	// There's a couple of things that we can config
 	marshaler := jsonpb.Marshaler{
-		EnumsAsInts:  false, // Such as write enums as integers or strings
-		EmitDefaults: true,  // Write fields with default value or not
-		Indent:       "  ",  // What's the indentation we want to use
-		OrigName:     true,  // Do we want to use the original field name defined in the proto file
+		EnumsAsInts:  true, // Such as write enums as integers or strings
+		EmitDefaults: true, // Write fields with default value or not
+		Indent:       "  ", // What's the indentation we want to use
+		OrigName:     true, // Do we want to use the original field name defined in the proto file
 	}
 
 	return marshaler.MarshalToString(message)

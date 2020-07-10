@@ -2,10 +2,16 @@ package sample
 
 import (
 	"math/rand"
+	"time"
 
 	"github.com/google/uuid"
 	"gitlab.com/techschool/pcbook/pb"
 )
+
+// We will tell rand to use the current unix nano as the seed value
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 func randomKeyboardLayout() pb.Keyboard_Layout {
 	switch rand.Intn(3) {
