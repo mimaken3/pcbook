@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"log"
+	"time"
 
 	"github.com/google/uuid"
 	"gitlab.com/techschool/pcbook/pb"
@@ -40,6 +41,19 @@ func (server *LaptopServer) CreateLaptop(
 			return nil, status.Errorf(codes.InvalidArgument, "cannot generate a new laptop ID: %v", err)
 		}
 		laptop.Id = id.String()
+	}
+
+	// some heavy processing
+	time.Sleep(6 * time.Second)
+
+	if ctx.Err() == context.Canceled {
+		log.Print("request is canceled")
+		return nil, status.Error(codes.Canceled, "request is canceled")
+	}
+
+	if ctx.Err() == context.DeadlineExceeded {
+		log.Print("deadline is exceeded")
+		return nil, status.Error(codes.DeadlineExceeded, "deadline is exceeded")
 	}
 
 	// save the laptop to store
